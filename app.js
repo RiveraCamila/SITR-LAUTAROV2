@@ -121,4 +121,4 @@ function guardarMBT(){
 
     renderTipoRegistro();
 
-}
+renderHome();
