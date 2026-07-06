@@ -120,5 +120,3 @@ function guardarMBT(){
     };
 
     renderTipoRegistro();
-
-renderHome();
