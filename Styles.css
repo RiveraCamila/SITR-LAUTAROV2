@@ -1,150 +1,87 @@
-/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* VARIABLES SITR */
-:root {
-    --primary: #1E3A46;       /* Azul petróleo */
-    --secondary: #355C6B;
-    --background: #F3F5F7;
-    --card: #FFFFFF;
-    --text: #22313A;
-    --border: #DCE3E7;
-    --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+:root{
+  --primary:#1E3A46;
+  --secondary:#355C6B;
+  --background:#F3F5F7;
+  --card:#FFFFFF;
+  --border:#DCE3E7;
 }
 
-/* BODY */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--background);
-    color: var(--text);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+body{
+  font-family: Arial, sans-serif;
+  background: var(--background);
 }
 
-/* HEADER */
-.app-header {
-    background: var(--primary);
-    color: white;
-    padding: 24px 20px;
-    text-align: center;
-    box-shadow: var(--shadow);
+.app-header{
+  background: var(--primary);
+  color:white;
+  padding:20px;
+  text-align:center;
 }
 
-.header-content h1 {
-    font-size: 28px;
-    margin-bottom: 8px;
+#app{
+  max-width:430px;
+  margin:auto;
+  padding:20px;
 }
 
-.header-content p {
-    font-size: 15px;
-    margin-bottom: 4px;
+.card{
+  background:white;
+  padding:20px;
+  border-radius:18px;
 }
 
-/* CONTENEDOR APP */
-#app {
-    flex: 1;
-    width: 100%;
-    max-width: 430px;
-    margin: auto;
-    padding: 24px 18px;
+.btn{
+  width:100%;
+  padding:18px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:14px;
+  background:var(--primary);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
 }
 
-/* CARDS */
-.card {
-    background: var(--card);
-    border-radius: 18px;
-    padding: 22px;
-    box-shadow: var(--shadow);
-    margin-bottom: 20px;
+.btn-back{
+  background:none;
+  border:none;
+  margin-bottom:15px;
+  cursor:pointer;
 }
 
-/* TITULOS */
-h2 {
-    margin-bottom: 18px;
+.form-group{
+  margin-bottom:16px;
 }
 
-/* BOTONES */
-.btn {
-    width: 100%;
-    min-height: 68px;
-    border: none;
-    border-radius: 16px;
-    background: var(--primary);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 16px;
-    transition: 0.2s;
+label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:bold;
 }
 
-.btn:hover {
-    background: var(--secondary);
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid var(--border);
+  border-radius:10px;
 }
 
-.btn-back {
-    background: none;
-    border: none;
-    color: var(--secondary);
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 20px;
+.row{
+  display:flex;
+  gap:10px;
 }
 
-/* FORMULARIOS */
-.form-group {
-    margin-bottom: 18px;
+.col{
+  flex:1;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    font-size: 15px;
-    background: white;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: var(--secondary);
-}
-
-textarea {
-    min-height: 100px;
-    resize: vertical;
-}
-
-/* GRID DOBLE */
-.row {
-    display: flex;
-    gap: 12px;
-}
-
-.col {
-    flex: 1;
-}
-
-/* FOOTER */
-.app-footer {
-    text-align: center;
-    padding: 14px;
-    color: #666;
-    font-size: 12px;
+.app-footer{
+  text-align:center;
+  padding:15px;
 }
